@@ -68,8 +68,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
 	@Override
 	public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
+
 		configurer.setDefaultTimeout(3000);
 		System.out.println("ok");
+
+
 		configurer.registerCallableInterceptors(new TimeoutCallableProcessingInterceptor());
 	}
 
