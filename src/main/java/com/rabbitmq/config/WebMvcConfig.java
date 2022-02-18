@@ -68,7 +68,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
 	@Override
 	public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
-		configurer.setDefaultTimeout(3000);
+		configurer.setDefaultTimeout(3000);//added by ajay
 		configurer.registerCallableInterceptors(new TimeoutCallableProcessingInterceptor());
 	}
 
