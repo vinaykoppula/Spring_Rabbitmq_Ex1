@@ -17,7 +17,7 @@ public class MessagingConfig {
 	return new TopicExchange("Vinay Exchange");	
 	}
 	public Binding binding(Queue queue,TopicExchange exchange) {
-		return BindingBuilder.bind(queue).to(exchange).with(null)
+		return BindingBuilder.bind(queue).to(exchange).with(ro)
 		
 	}
 	
